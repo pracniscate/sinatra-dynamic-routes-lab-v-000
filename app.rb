@@ -32,12 +32,12 @@ class App < Sinatra::Base
     when 'add'
       output = num1 + num2
     when 'subtract'
-      output = num1 - num2 
+      output = num1 - num2
     when 'multiply'
-      output = num1 * num2 
+      output = num1 * num2
     when "divide"
-      output = num1 / num2 
-    else 
+      output = num1 / num2
+    else
       output = "Unable to perform this operation"
     end
     output.to_s

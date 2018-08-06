@@ -11,10 +11,11 @@ class App < Sinatra::Base
     (num.to_i ** 2).to_s
   end
 
+  # returns the phrase in a string the number of times given
   get '/say/:number/:phrase' do
     phrase = ""
     (params[:number].to_i).times do
-      phrase += "#{params[:phrase]}"
+      phrase += "#{params[:phrase]}\n"
     end
     phrase
   end
